@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>고래서점</title>
+    <link rel="stylesheet" href="css/common.css" type="text/css">
+    <script src="libs/jquery-1.12.4.min.js"></script>
+    <script src="libs/bxSlider/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="libs/bxSlider/jquery.bxslider.min.css">
+    <link rel="stylesheet" href="css/sub_modenNovel.css" type="text/css">
+    <script src="js/common.js"></script>
+    <script src="js/sub_modenNovel.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="util_area clearfix">
+                <div class="center">
+                    <ul>
+                        <li><a href="sub_login.html" class="pulseAnim">로그인</a></li>
+                        <li><a href="#">마이페이지</a></li>
+                        <li><a href="#">장바구니</a></li>
+                        <li><a href="#">주문조회</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--유틸-->
+            <div class="header_contents clearfix">
+                <div class="center clearfix">
+                    <h1><a href="index.html">고래서점</a></h1>
+                    <form>
+                        <fieldset>
+                            <legend>검색창</legend>
+                            <div>
+                            <select>
+                                <option>통합검색</option>
+                                <option>도서</option>
+                                <option>키즈샵</option>
+                                <option>수험서</option>
+                                <option>음반</option>
+                                <option>영상</option>
+                            </select>
+                            </div>
+                            <div>
+                            <input type="text">
+                            </div>
+                            <div>
+                            <input type="submit" value="검색">
+                            </div>
+                            <div></div>
+                        </fieldset>
+                    </form>
+                    <div class="rank">
+                        <p><a href="#">1</a></p>
+                        <p><a href="#">클루지</a></p>
+                        <p><a href="#">화살표</a></p>
+                    </div>
+                    <div class="rankbox">
+                        <h3>실시간 도서 검색 순위</h3>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span>1</span>
+                                    <span>클루지</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>2</span>
+                                    <span>지능의 사생활</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>3</span>
+                                    <span>삼국지</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>4</span>
+                                    <span>김윤식</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>5</span>
+                                    <span>일본어</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>6</span>
+                                    <span>내 감정을 읽는 시간</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>7</span>
+                                    <span>쏘가리</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>8</span>
+                                    <span>강수정</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>9</span>
+                                    <span>태백산맥</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>10</span>
+                                    <span>영언문화사</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>    
+            <!--//헤더 상단-->
+            <div class="gnb">
+                <ul class="clearfix">
+                    <li class="area"><a href="#">분야 보기</a></li>
+                    <li><a href="#">신상 도서</a></li>
+                    <li><a href="#">최저가 도서</a></li>
+                    <li><a href="#">추천 도서</a></li>
+                    <li><a href="#">중고책 팔기</a></li>
+                    <li class="commu"><a href="#">커뮤니티</a>
+                    </li>
+                </ul>
+            </div>
+            <!--//gnb-->
+            <div class="subgnb clearfix">
+                <div class="book_list">
+                    <h4><a href="#">도서</a></h4>
+                    <div>
+                        <span><a href="sub_novel.html" class="pulseAnim">소설</a></span>
+                        <span><a href="#">장르소설</a></span>
+                        <p><a href="#">시/에세이/기행</a></p>
+                        <p><a href="#">청소년교양</a></p>
+                        <span><a href="#">경제경영</a></span>
+                        <p><a href="#">자기계발</a></p>
+                        <p><a href="#">인문/교양/철학</a></p>
+                        <p><a href="#">종교</a></p>
+                        <p><a href="#">사회/정치/법률</a></p>
+                        <p><a href="#">예술/대중문화</a></p>
+                        <p><a href="#">자연과학/공학</a></p>
+                    </div>
+                    <div>
+                        <p><a href="#">초등참고서</a></p>
+                        <span><a href="#">중/고등참고서</a></span>
+                        <p><a href="#">외국어/사전</a></p>
+                        <p><a href="#">대학교재</a></p>
+                        <p><a href="#">컴퓨터/IT</a></p>
+                        <p class="mgt"><a href="#">가정/생활/요리</a></p>
+                        <p><a href="#">건강/의학/미용</a></p>
+                        <p><a href="#">잡지</a></p>
+                        <p><a href="#">만화</a></p>
+                        <p class="mgt"><a href="#">서양서</a></p>
+                        <p><a href="#">일본서</a></p>
+                    </div>
+                </div>
+                <div class="kids_list list">
+                    <h4><a href="#">키즈샵</a></h4>
+                    <div>
+                        <p><a href="#">유아</a></p>
+                        <p><a href="#">육아/자녀교육</a></p>
+                        <span><a href="#">어린이</a></span>
+                        <p><a href="#">어린이영어</a></p>
+                        <p><a href="#">유아동전집</a></p>
+                        <p><a href="#">임신/출산/태교</a></p>
+                        <p><a href="#">교구완구</a></p>
+                    </div>
+                </div>
+                <div class="examination_list list">
+                    <h4><a href="#">수험서</a></h4>
+                    <div>
+                        <span><a href="#">공무원</a></span>
+                        <p><a href="#">국가고시</a></p>
+                        <p><a href="#">임용시험</a></p>
+                        <p><a href="#">대기업/공기업/면접</a></p>
+                        <p><a href="#">대표저자수험서</a></p>
+                        <p><a href="#">국가기술자격증</a></p>
+                        <p><a href="#">국가전문자격증</a></p>
+                        <p><a href="#">민간전문자격증</a></p>
+                        <p><a href="#">외국자격증</a></p>
+                        <p><a href="#">편입/진학/전문대학원</a></p>
+                        <p><a href="#">공부법/안내서</a></p>
+                    </div>
+                </div>
+                <div class="list">
+                    <h4><a href="#">음반</a></h4>
+                    <div>
+                        <p><a href="#">CD</a></p>
+                        <p><a href="#">LP판</a></p>
+                        <br>
+                        <span><a href="#">영상/비디오/DVD</a></span>
+                    </div>
+                </div>
+            </div>
+            <!--//subgnb-->
+            <div class="subgnb2">
+                <ul>
+                    <li><a href="#">질문과 대답</a></li>
+                    <li><a href="#">도서 Q&amp;A</a></li>
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">자료실</a></li>
+                    <li><a href="#">사용후기</a></li>
+                </ul>
+            </div>
+            <!--//subgnb2-->
+        </div>
+        <!--헤더-->
+        <div class="contents_area">
+            <div class="location">
+                <div class="center">
+                    <ul class="clearfix">
+                        <li><a href="#">홈</a></li>
+                        <li>></li>
+                        <li class="loca_book"><a href="#">도서</a></li>
+                        <li class="loca_book"><a href="#"><img src="image/sub_arrow.png" alt="아래 화살표"></a></li>
+                        <li>></li>
+                        <li class="loca_novel"><a href="#">소설</a></li>
+                        <li class="loca_novel"><a href="#"><img src="image/sub_arrow.png" alt="아래 화살표"></a></li>
+                        <li>></li>
+                        <li class="loca_ko"><a href="#">한국소설</a></li>
+                        <li class="loca_ko"><a href="#"><img src="image/sub_arrow.png" alt="아래 화살표"></a></li>
+                        <li>></li>
+                        <li class><a href="#">현대소설</a></li>
+                    </ul>
+                </div>
+                <div class="sub_loca_book">
+                    <ul>
+                        <li><a href="#">도서</a></li>
+                        <li><a href="#">키즈샵</a></li>
+                        <li><a href="#">수험서</a></li>
+                        <li><a href="#">음반</a></li>
+                    </ul>
+                </div>
+                <div class="sub_location">
+                    <ul>
+                        <li><a href="sub_novel.html" class="pulseAnim">소설</a></li>
+                        <li><a href="#">장르소설</a></li>
+                        <li><a href="#">시/에세이/기행</a></li>
+                        <li><a href="#">청소년교양</a></li>
+                        <li><a href="#">경제/경영</a></li>
+                        <li><a href="#">자기계발</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">인문/교양/철학</a></li>
+                        <li><a href="#">역사/신화/문화</a></li>
+                        <li><a href="#">종교</a></li>
+                        <li><a href="#">사회/정치/법률</a></li>
+                        <li><a href="#">예술/대중문화</a></li>
+                        <li><a href="#">자연과학/공학</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">초등참고서</a></li>
+                        <li><a href="#">중/고등참고서</a></li>
+                        <li><a href="#">외국어/사전</a></li>
+                        <li><a href="#">대학교재</a></li>
+                        <li><a href="#">컴퓨터/IT</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">가정/생활/요리</a></li>
+                        <li><a href="#">건강/의학/미용</a></li>
+                        <li><a href="#">잡지</a></li>
+                        <li><a href="#">만화</a></li>
+                        <li><a href="#">서양서</a></li>
+                        <li><a href="#">일본서</a></li>
+                    </ul>
+                </div>
+                <div class="sub_loca_ko">
+                    <ul>
+                        <li><a href="sub_koreanovel.html" class="pulseAnim">한국소설</a></li>
+                        <li><a href="#">영미소설</a></li>
+                        <li><a href="#">일본소설</a></li>
+                        <li><a href="#">중국소설</a></li>
+                        <li><a href="#">러시아소설</a></li>
+                        <li><a href="#">프랑스소설</a></li>
+                        <li><a href="#">독일소설</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">기타외국소설</a></li>
+                        <li><a href="#">장르소설</a></li>
+                        <li><a href="#">테마소설</a></li>
+                        <li><a href="#">청소년소설</a></li>
+                        <li><a href="#">고전문학</a></li>
+                        <li><a href="#">세계문학</a></li>
+                        <li><a href="#">소설이론</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--//상단 로케이션-->
+            <div class="product center clearfix">
+                <div class="pro_img">
+                    <img src="image/sub3_product1.png" alt="두근두근 내인생">
+                    <p><a href="#">미리보기</a></p>
+                </div>
+                <div class="pro_info">
+                    <div class="info_txt">
+                        <div class="tag">
+                            <p>2011 제9회 올해의 책 선정도서</p>
+                        </div>
+                        <div class="title">
+                            <h2>두근두근 내인생</h2>
+                        </div>
+                        <div class="name clearfix">
+                            <ul>
+                                <li><a href="#">김애란 저</a></li>
+                                <li><a href="#">창비</a></li>
+                                <li>2011년 6월 02일</li>
+                            </ul>
+                        </div>
+                        <div class="rating clearfix">
+                            <ul>
+                                <li>평점</li>
+                                <li><img src="image/sub2_starpoint4.png" alt="별점4"></li>
+                                <li>상태</li>
+                                <li><img src="image/sub2_starpoint4.png" alt="별점4"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info_txt clearfix">
+                        <ul>
+                            <li class="price clearfix">
+                                <div class="txt_left">소비자가</div>
+                                <div class="txt_right">12,000원</div>
+                            </li>
+                            <li class="clearfix">
+                                <div class="txt_left">판매가</div>
+                                <div class="sale_p"><span>7,000</span>원 (42%↓)</div>
+                                <div>적립금 <span>50원</span></div>
+                            </li>
+                            <li class="clearfix">
+                                <div class="txt_left">배송비</div>
+                                <div class="del_p">2,500원</div>
+                                <div>5만원 이상 구매 시 무료배송</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="info_txt">
+                        <ul>
+                            <li class="clearfix">
+                                <div class="txt_left">구매수량</div>
+                                <div class="qty">
+                                    <a href="#">-</a>
+                                    <span>1</span>
+                                    <a href="#">+</a>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <div>총 상품금액 <span class="delivery">(배송비 +2,500원)</span></div>
+                                <div><span class="total">9,500</span>원</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="button">
+                        <form>
+                            <fieldset>
+                                <legend>버튼</legend>
+                                <input type="button" value="장바구니 담기" class="shopping_list">
+                                <input type="button" value="관심상품 등록" class="interest">
+                                <a href="sub_login.html" class="pulseAnim">바로구매</a>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="kakaopay">
+                        <div><a href="#">카톡하나로 결제 끝<br><span>카카오페이</span></a></div>
+                        <div><a href="#">카카오페이머니 결제 시<br>100% 리워드 증정</a></div>
+                        <div class="pay"><a href="#">카카오페이 결제</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="information center">
+                <div class="tab clearfix" id="tab0" >
+                    <ul>
+                        <li class="on"><a href="#">도서정보</a></li>
+                        <li><a href="#">회원리뷰</a></li>
+                        <li><a href="#">상품문의</a></li>
+                        <li><a href="#">배송/반품/교환</a></li>
+                    </ul>
+                    <div></div>
+                </div>
+                <div class="info_list">
+                    <div class="condition">
+                        <h3>상품 상태</h3>
+                        <ul>
+                            <li>
+                                <span>품질 등급</span>
+                                <p class="grade">상</p>
+                            </li>
+                            <li>
+                                <span>헌 상태</span>
+                                <p>약간의 사용감은 있으나 깨끗한 책</p>
+                            </li>
+                            <li>
+                                <span>표지</span>
+                                <p>희미한 변색이나 작은 얼룩이 있음 / 찢어진 흔적 없음 / 약간의 모서리 해짐 / 낙서 없음</p>
+                            </li>
+                            <li>
+                                <span>책등 / 책배</span>
+                                <p>희미한 변색이나 작은 얼룩이 있음 / 약간의 닳은 흔적 있음 / 낙서 없음</p>
+                            </li>
+                            <li>
+                                <span>내부 / 제본상태</span>
+                                <p>변색 없음 / 낙서 없음 / 변형 없음 / 아주 약간의 접힌 흔적 있음 / 얼룩 없음 / 제본 탈착 없음 </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="category">
+                        <h3>이 책이 속한 분야</h3>
+                        <ul class="clearfix">
+                            <li><a href="#">도서</a></li>
+                            <li>></li>
+                            <li><a href="#">소설</a></li>
+                            <li>></li>
+                            <li><a href="#">한국소설</a></li>
+                            <li>></li>
+                            <li><a href="#">현대소설 , 드라마/영화소설</a></li>
+                        </ul>
+                    </div>
+                    <div class="introduce">
+                        <h3>책 소개</h3>
+                        <div>
+                            <ul class="intro_list">
+                                <li>
+                                    <span>출간일</span>
+                                    <p>2011년 06월 02일</p>
+                                </li>
+                                <li>
+                                    <span>쪽수</span>
+                                    <p>355쪽</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            2002년, 약관의 나이로 등단한 이래 『달려라 아비』, 『침이 고인다』 두 권의 소설집만으로 한국일보문학상, 오늘의 젊은 예술가상, 신동엽창작상, 이효석문학상, 김유정문학상, 젊은작가상 등을 수상하며 2천년대 한국문학을 대표하는 작가로 자리매김한 김애란의 첫번째 장편소설. 가장 어린 부모와 가장 늙은 자식의 청춘과 사랑에 대한 눈부신 이야기를 다룬다. 
+                            관광단지 공사가 한창인 마을, 아직 자신이 자라서 무엇이 될지 모르는 열일곱 철없는 나이에 덜컥 아이를 가진 부모가 있다. 어린 부모는 불안과 두근거림 속에서 살림을 차리고, 사람들의 관심과 사랑을 한몸에 받으며 태어난 아이 '아름'은 누구보다 씩씩하고 밝게 자란다. 하지만 아름에게는 미처 다 자라기도 전에 누구보다 빨리 늙어버리는 병, 조로증이 있다.
+                            열일곱 소년의 마음과 여든의 몸을 지닌 아름은 책읽기와 글쓰기를 좋아하고, 이웃의 예순살 할아버지를 유일한 친구로 삼은 아이이다. 고통과 죽음을 늘 곁에 둔 채 상대적으로 길게만 느껴지는 시간을 겪어야 하는만큼 아름은 자연스레 인생에 대해 배우고 느낀다. 아름은 어린 부모의 만남과 연애, 자신이 태어난 이야기를 글로 써서 열여덟번째 생일에 부모에게 선물하기로 마음먹는데…
+                        </div>
+                        <div>
+                            <p>▶ 『두근두근 내 인생 』 영화 티저 예고편</p>
+                            <iframe src="https://www.youtube.com/embed/FWlfoISKUhc" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <span>* 출판사의 사정에 따라 서비스가 변경 또는 중지될 수 있습니다.</span>
+                        </div>
+                    </div>
+                    <div class="table_of_con">
+                        <h3>목차</h3>
+                        <ul>
+                            <li>프롤로그</li>
+                            <li>1부</li>
+                            <li>2부</li>
+                            <li>3부</li>
+                            <li><br>에필로그</li>
+                            <li>두근두근 그 여름 / 한아름</li>
+                            <li>작가의 말</li>
+                        </ul>
+                    </div>
+                    <div class="b_con">
+                        <h3>책 속으로</h3>
+                        <div>
+                            '그럼…… 나는 정말 뭘 잘하지?'
+                            <br>(중략)
+                            <br>'아! 나는 포기를 잘하는구나!' -15쪽
+                        </div>
+                        <div>
+                            "대수야"
+                            <br>"응?"
+                            <br>"새에게 잡아먹히지 않으려고 새똥으로 위장하는 곤충이 있대."
+                            <br>"근데?"
+                            <br>"그게 꼭 너 같다." -20쪽
+                        </div>
+                        <div>
+                            어머니의 얼굴에는 가임기 여성의 자신만만함과 자랑스러움이 그득했다. 자기가 어떤 표정을 짓고 있는지 몰라 '진짜 권력'처럼 보이는 청춘의 민낯이었다. -37쪽
+                        </div>
+                        <div>
+                            모든 생명은 '태어나는' 것이 아니라 '터져나오는' 거란 걸 어머니는 진작부터 알고 있었다.(중략)그동안 많이 참아왔다는 듯. 도저히 더는 못 참겠다는 듯. 웃음처럼, 야유처럼, 박수처럼. 펑! 펑! -44쪽
+                        </div>
+                        <div>하지만 나는 더 큰 기적은 항상 보통 속에 존재한다고 믿는 편이다. -47쪽</div>
+                        <span><a href="#">더보기 +</a></span>
+                    </div>
+                    <div class="writer clearfix">
+                        <h3>저자 및 역자 소개</h3>
+                        <img src="image/sub3_writer.png" alt="김애란 작가">
+                        <div>저자 : <span>김애란</span></div>
+                        <div>1980년 인천에서 태어나 서산에서 자랐으며, 한국예술종합학교 연극원 극작과를 졸업했다. 2002년 제1회 대산대학문학상에 단편 「노크하지 않는 집」이 당선되어 문단에 나왔다. 한국일보문학상과 이효석문학상, 오늘의 젊은 예술가상, 신동엽창작상, 김유정문학상, 젊은작가상을 받았다. 소설집 『달려라, 아비』 『침이 고인다』 『비행운』과 장편소설 『두근두근 내 인생』이 있다. 2013년 '침묵의 미래'로 제37회 이상문학상을 수상했으며, 『비행운』으로 18회 한무숙문학상을 수상했다.</div>
+                    </div>
+                    <div class="publisher">
+                        <h3>출판사 서평</h3>
+                        <div>
+                            <strong>차세대 한국문단의 희망, 김애란 첫 장편 </strong>
+                            <p>
+                            2002년, 약관의 나이로 등단한 이래 『달려라 아비』 『침이 고인다』 두 권의 소설집만으로 한국일보문학상, 오늘의 젊은 예술가상, 신동엽창작상, 이효석문학상, 김유정문학상, 젊은작가상 등을 수상하며 차세대 한국문학을 대표하는 작가로 떠오른 김애란의 첫번째 장편 『두근두근 내 인생』이 출간되었다. 2010년 여름부터 2011년 봄까지 계간 『창작과비평』에 연재될 당시부터 문단과 독자들 사이에서 숱한 화제가 된 이 작품은 가장 어린 부모와 가장 늙은 자식의 청춘과 사랑에 대한 눈부신 이야기를 다룬다. 담백하고 신선한 문장들로 담아낸 벅찬 생의 한순간과 사랑에 대한 반짝이는 통찰이 읽는 내내 미소를 머금게 하고 폭소를 터뜨리게 하다가 어느 순간에는 울컥, 눈물을 감출 수 없게 만든다. “김애란을 사랑하지 않는 것이 도대체 가능한가”(신형철 『몰락의 에티카』)라는 반문에 동의할 수밖에 없는 아름답고 사랑스러운 소설이다.
+                            </p>
+                        </div>
+                        <div>
+                            <strong>젊다는 건 어떤 기분일까, 늙는다는 건 어떤 기분일까</strong>
+                            <p>
+                            관광단지 공사가 한창인 마을, 아직 자신이 자라서 무엇이 될지 모르는 열일곱 철없는 나이에 덜컥 아이를 가진 부모가 있다. 어린 부모는 불안과 두근거림 속에서 살림을 차리고, 사람들의 관심과 사랑을 한몸에 받으며 태어난 아이 ‘아름’은 누구보다 씩씩하고 밝게 자란다. 하지만 아름에게는 미처 다 자라기도 전에 누구보다 빨리 늙어버리는 병, 조로증이 있다. 
+                            </p>
+                            <span><a href="#">더보기 +</a></span>
+                        </div>
+                    </div>
+                    <div class="other">
+                        <h3>이 책을 보신 분들이 함께 본 상품입니다</h3>
+                        <div class="clearfix">
+                            <ul class="otherbooks">
+                                <li>
+                                    <a href="#"><img src="image/sub3_otherbook1.png" alt="진이, 지니"></a>
+                                    <p>진이, 지니</p>
+                                    <p>정유정 저</p>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="image/best8.png" alt="클루지"></a>
+                                    <p>클루지</p>
+                                    <p>개리 마커스 저</p>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="image/sub3_otherbook3.png" alt="82년생 김지영"></a>
+                                    <p>82년생 김지영</p>
+                                    <p>조남주 저</p>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="image/sub3_otherbook4.png" alt="덕혜옹주"></a>
+                                    <p>덕혜옹주</p>
+                                    <p>권비영 저</p>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="image/best6.png" alt="참을 수 없는 존재의 가벼움"></a>
+                                    <p>참을 수 없는 존재의 가벼움</p>
+                                    <p>밀란 쿤데라 저</p>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="image/recommend4.png" alt="미움받을 용기"></a>
+                                    <p>미움받을 용기</p>
+                                    <p>기시미 이치로 저</p>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="image/sub3_otherbook1.png" alt="진이, 지니"></a>
+                                    <p>진이, 지니</p>
+                                    <p>정유정 저</p>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="image/best8.png" alt="클루지"></a>
+                                    <p>클루지</p>
+                                    <p>개리 마커스 저</p>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="image/sub3_otherbook3.png" alt="82년생 김지영"></a>
+                                    <p>82년생 김지영</p>
+                                    <p>조남주 저</p>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="image/sub3_otherbook4.png" alt="덕혜옹주"></a>
+                                    <p>덕혜옹주</p>
+                                    <p>권비영 저</p>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="image/best6.png" alt="참을 수 없는 존재의 가벼움"></a>
+                                    <p>참을 수 없는 존재의 가벼움</p>
+                                    <p>밀란 쿤데라 저</p>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="image/recommend4.png" alt="미움받을 용기"></a>
+                                    <p>미움받을 용기</p>
+                                    <p>기시미 이치로 저</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--//info_txt-->
+                <div class="tab tab2 clearfix" id="tab1">
+                    <ul>
+                        <li><a href="#">도서정보</a></li>
+                        <li class="on"><a href="#">회원리뷰</a></li>
+                        <li><a href="#">상품문의</a></li>
+                        <li><a href="#">배송/반품/교환</a></li>
+                    </ul>
+                    <div></div>
+                </div>
+                <div class="review">
+                    <p>회원리뷰 <span>0</span></p>
+                    <div>
+                        <p>작성된 구매후기가 없습니다.</p>
+                        <p><b>상품을 구매하셨다면, 구매후기를 남겨주세요.</b></p>
+                        <p><a href="#">구매후기 작성</a></p>
+                    </div>
+                    <div class="review_btn clearfix">
+                        <p><a href="#">판매자 상품리뷰 전체</a></p>
+                        <p><a href="#">내가 작성한 상품리뷰 전체</a></p>
+                    </div>
+                </div>
+                <div class="tab tab3 clearfix" id="tab2">
+                    <ul>
+                        <li><a href="#">도서정보</a></li>
+                        <li><a href="#">회원리뷰</a></li>
+                        <li class="on"><a href="#">상품문의</a></li>
+                        <li><a href="#">배송/반품/교환</a></li>
+                    </ul>
+                    <div></div>
+                </div>
+                <div class="question">
+                    <p>상품문의 <span>0</span></p>
+                    <ul>
+                        <li><a href="#">자주 묻는 질문 ></a></li>
+                        <li>&#8226; 구매한 상품의 <b>취소/반품은 마이페이지 내 1:1 문의하기에서 신청</b> 가능합니다</li>
+                        <li>&#8226; 상품문의 및 후기게시판을 통해 취소나 환불, 반품 등은 처리되지 않습니다.</li>
+                        <li>&#8226; 상품과 관계없는 글, 양도, 광고성, 욕설, 비방, 도배 등의 글은 예고없이 삭제됩니다.</li>
+                    </ul>
+                    <form>
+                        <fieldset>
+                            <legend>문의하기</legend>
+                            <input type="text" placeholder="전화번호, 주소, 이메일, 계좌번호 등의 개인정보는 타인에 의해 도용될 위험이 있으니, 문의시 입력하지 않도록 주의해 주시기 바랍니다.">
+                            <input type="submit" value="등록하기">
+                            <input type="checkbox" id="screet" name="screetbtn" value="비밀글"><label for="screet"> 비밀글로 문의하기</label>
+                        </fieldset>
+                    </form>
+                    <div>
+                        <p>등록된 상품 문의 글이 없습니다.</p>
+                        <p><b>상품에 대해 궁금한 점을 남겨주세요.</b></p>
+                    </div>
+                </div>
+                <div class="tab tab4 clearfix" id="tab3">
+                    <ul>
+                        <li><a href="#">도서정보</a></li>
+                        <li><a href="#">회원리뷰</a></li>
+                        <li><a href="#">상품문의</a></li>
+                        <li class="on"><a href="#">배송/반품/교환</a></li>
+                    </ul>
+                    <div></div>
+                </div>
+                <div class="del_info clearfix">
+                    <h3>배송/반품/교환 안내</h3>
+                    <div>
+                        <h4>배송 안내</h4>
+                        <dl>
+                            <dt>배송비/배송가능일</dt>
+                            <dd>
+                                <p><strong>배송지역 : </strong>전국</p>
+                                <p><strong>배송비 : </strong><span>2,500원</span></p>
+                                <p>고래서점 배송 상품의 총 결제금액 <span>50,000</span>원 이상일 경우 <span>무료배송</span> 됩니다.</p>
+                                <p>도서, 산간, 오지 일부 지역은 배송비가 추가될 수 있습니다.</p>
+                                <p><strong>배송가능일 : </strong>3일</p>
+                                <p>배송가능일이란 본 상품을 주문하신 고객님들께 상품 배송이 가능한 기간을 의미합니다. 단, 연휴 및 공휴일은 기간 계산시 제외하며 현금 주문일 경우 입금일 기준 입니다.</p>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="return">
+                        <h4>반품/교환 안내</h4>
+                        <dl>
+                            <dt>반품/교환 방법</dt>
+                            <dd>
+                                <p>"마이페이지>주문조회>반품/교환신청", 1:1상담>반품/교환 또는 고객센터</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>교환/반품 신청 기간</dt>
+                            <dd>
+                                <p>교환, 반품 신청은 배송이 완료된 후 7일 이내 가능합니다.</p>
+                                <p>고객님이 배송 받으신 상품의 내용이 표시∙광고의 내용과 다르거나 계약내용과 다르게 이행된 경우에는 배송 받으신 날로부터 3개월 이내, 혹은 그 사실을 알 수 있었던 날로 부터 30일 이내에 가능합니다.</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>교환/반품/회수 비용</dt>
+                            <dd>
+                                <p>
+                                고객님의 사유에 의한 교환 및 반품은 회수 및 배송에 필요한 비용을 부담해주셔야 합니다. <br>
+                                기본 비용은 교환 5,000원(회수비+배송비), 반품 2,500원(회수비)입니다. <br>
+                                제주도 및 도서산간 지방에는 추가 운임이 발생합니다. <br>
+                                당사의 사유(상품의 하자, 배송의 오류 등)로 인한 경우 교환 및 반품에 필요한 비용은 당사에서 부담합니다.
+                                </p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>교환/반품 불가안내</dt>
+                            <dd>
+                                <p>
+                                고객님의 사유에 의한 교환 및 반품이 불가한 경우 <br> 
+                                1. 배송이 완료된 후 7일이 경과한 경우 <br>
+                                2. 포장 훼손 및 사용 또는 일부 소비, 구성품 누락 및 상품의 결함 발생으로 인해 상품의 가치가 훼손된 경우
+                                </p>
+                                <p>
+                                당사의 사유에 의한 교환 및 반품이 불가한 경우 <br>
+                                1. 배송 받으신 날로부터 3개월, 혹은 그 사실을 알 수 있었던 날로 부터 30일이 경과한 경우 <br>
+                                2. 당사의 귀책(상품의 불량, 생산 및 제조 및 배송 간의 파손 등)으로 인한 현상이 아닌 해당 상품의 고유한 특성, 혹은 상품 수령 후 고객님의 과실로 인한 문제임이 규명된 경우
+                                </p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <!--//도서정보-->
+        </div>
+        <!--컨텐츠 영역-->
+        <div class="quick">
+            <div id="cart">
+                <a href="#">
+                    <img src="image/cart.png" alt="장바구니 아이콘">
+                    <p id="cart_num">1</p>
+                    <p>장바구니</p>
+                </a>
+            </div>
+            <div id="look_img">
+                <p><a href="#">최근 본 <span>3</span></a></p>
+                <a href="#"><img src="image/look1.png" alt="인생의 마지막 순간에서"></a>
+                <a href="#"><img src="image/look2.png" alt="죽음"></a>
+                <a href="#"><img src="image/look3.png" alt="내가 사랑한 유럽 top10" class="sec"></a>
+                <div>
+                    <p class="prev"><a href="#"><img src="image/look_arrow.png" alt="왼쪽 화살표"></a></p>
+                    <p><span>1</span> / 2</p>
+                    <p class="next"><a href="#"><img src="image/look_arrow2.png" alt="오른쪽 화살표"></a></p>
+                </div>
+            </div>
+            <div id="top">
+                <p><a href="#">TOP</a></p>
+            </div>
+        </div>
+        <!--퀵 메뉴바-->
+        <div class="footer">
+            <div class="center">
+                <div class="footer_logo">
+                    <h2><a href="index.html">고래서점</a></h2>
+                </div>
+                <div class="footer_area">
+                <div class="area_terms clearfix">
+                    <ul>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#"><b>개인정보처리방침</b></a></li>
+                        <li><a href="#">이용안내</a></li>
+                        <li><a href="#">입금계좌안내</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </div>
+                <div class="address clearfix">
+                    <ul>
+                        <li>상호 : 고래서점</li>
+                        <li>대표자 : 남동일</li>
+                        <li>개인정보 보호 책임자 : 남동일</li>
+                        <li>E-mail : <a href="#">help@gorebook.co.kr</a></li>
+                    </ul>
+                </div>
+                <div class="address clearfix">
+                    <ul>
+                        <li>사업자 등록번호 : 106-04-73454 <span><a href="#">[사업자정보확인]</a></span></li>
+                        <li>통신판매업 신고번호 : 2016-경기양주-0001</li>
+                    </ul>
+                </div>
+                <div class="address clearfix">
+                    <ul>
+                        <li>주소 : [물류센터]경기도 양주시 백석읍 복지리 426-8 / [온라인센터] 경기도 양주시 백석읍 호명로 87</li>
+                        <li>전화 : 031-878-5720</li>
+                    </ul>
+                </div>
+                <div>
+                    <address>Contact <span><a href="#">메일</a></span> for more information. Copyright &copy; 2007 <b>고래서점</b> All rights reserved.</address>
+                </div>
+                <div class="company">
+                    <ul>
+                        <li><a href="#"><img src="image/footer.png" alt="공정거래위원회"></a></li>
+                        <li><a href="#"><img src="image/footer2.png" alt="KSNET"></a></li>
+                        <li><a href="#"><img src="image/footer3.png" alt="현금영수증 가맹점"></a></li>
+                        <li><a href="#"><img src="image/footer4.png" alt="Black Shield 보안서버 작동중"></a></li>
+                        <li><a href="#"><img src="image/footer5.png" alt="Hardware Firewall"></a></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!--푸터-->
+    </div>
+</body>
+</html>
