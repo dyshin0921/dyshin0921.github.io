@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>고래서점</title>
+    <link rel="stylesheet" href="css/common.css" type="text/css">
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <script src="libs/jquery-1.12.4.min.js"></script>
+    <script src="libs/jquery.cookie.js"></script>
+    <script src="libs/bxSlider/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="libs/bxSlider/jquery.bxslider.min.css">
+    <script src="js/common.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="util_area clearfix">
+                <div class="center">
+                    <ul>
+                        <li><a href="sub_login.html" class="pulseAnim">로그인</a></li>
+                        <li><a href="#">마이페이지</a></li>
+                        <li><a href="#">장바구니</a></li>
+                        <li><a href="#">주문조회</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--유틸-->
+            <div class="header_contents clearfix">
+                <div class="center clearfix">
+                    <h1><a href="index.html">고래서점</a></h1>
+                    <form>
+                        <fieldset>
+                            <legend>검색창</legend>
+                            <div>
+                            <select>
+                                <option>통합검색</option>
+                                <option>도서</option>
+                                <option>키즈샵</option>
+                                <option>수험서</option>
+                                <option>음반</option>
+                                <option>영상</option>
+                            </select>
+                            </div>
+                            <div>
+                            <input type="text">
+                            </div>
+                            <div>
+                            <input type="submit" value="검색">
+                            </div>
+                            <div></div>
+                        </fieldset>
+                    </form>
+                    <div class="rank">
+                        <p><a href="#">1</a></p>
+                        <p><a href="#">클루지</a></p>
+                        <p><a href="#">화살표</a></p>
+                    </div>
+                    <div class="rankbox">
+                        <h3>실시간 도서 검색 순위</h3>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span>1</span>
+                                    <span>클루지</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>2</span>
+                                    <span>지능의 사생활</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>3</span>
+                                    <span>삼국지</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>4</span>
+                                    <span>김윤식</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>5</span>
+                                    <span>일본어</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>6</span>
+                                    <span>내 감정을 읽는 시간</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>7</span>
+                                    <span>쏘가리</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>8</span>
+                                    <span>강수정</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>9</span>
+                                    <span>태백산맥</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>10</span>
+                                    <span>영언문화사</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>    
+            <!--//헤더 상단-->
+            <div class="gnb">
+                <ul class="clearfix">
+                    <li class="area"><a href="#">분야 보기</a></li>
+                    <li><a href="#">신상 도서</a></li>
+                    <li><a href="#">최저가 도서</a></li>
+                    <li><a href="#">추천 도서</a></li>
+                    <li><a href="#">중고책 팔기</a></li>
+                    <li class="commu"><a href="#">커뮤니티</a>
+                    </li>
+                </ul>
+            </div>
+            <!--//gnb-->
+            <div class="subgnb clearfix">
+                <div class="book_list">
+                    <h4><a href="#">도서</a></h4>
+                    <div>
+                        <span><a href="sub_novel.html" class="pulseAnim">소설</a></span>
+                        <span><a href="#">장르소설</a></span>
+                        <p><a href="#">시/에세이/기행</a></p>
+                        <p><a href="#">청소년교양</a></p>
+                        <span><a href="#">경제경영</a></span>
+                        <p><a href="#">자기계발</a></p>
+                        <p><a href="#">인문/교양/철학</a></p>
+                        <p><a href="#">종교</a></p>
+                        <p><a href="#">사회/정치/법률</a></p>
+                        <p><a href="#">예술/대중문화</a></p>
+                        <p><a href="#">자연과학/공학</a></p>
+                    </div>
+                    <div>
+                        <p><a href="#">초등참고서</a></p>
+                        <span><a href="#">중/고등참고서</a></span>
+                        <p><a href="#">외국어/사전</a></p>
+                        <p><a href="#">대학교재</a></p>
+                        <p><a href="#">컴퓨터/IT</a></p>
+                        <p class="mgt"><a href="#">가정/생활/요리</a></p>
+                        <p><a href="#">건강/의학/미용</a></p>
+                        <p><a href="#">잡지</a></p>
+                        <p><a href="#">만화</a></p>
+                        <p class="mgt"><a href="#">서양서</a></p>
+                        <p><a href="#">일본서</a></p>
+                    </div>
+                </div>
+                <div class="kids_list list">
+                    <h4><a href="#">키즈샵</a></h4>
+                    <div>
+                        <p><a href="#">유아</a></p>
+                        <p><a href="#">육아/자녀교육</a></p>
+                        <span><a href="#">어린이</a></span>
+                        <p><a href="#">어린이영어</a></p>
+                        <p><a href="#">유아동전집</a></p>
+                        <p><a href="#">임신/출산/태교</a></p>
+                        <p><a href="#">교구완구</a></p>
+                    </div>
+                </div>
+                <div class="examination_list list">
+                    <h4><a href="#">수험서</a></h4>
+                    <div>
+                        <span><a href="#">공무원</a></span>
+                        <p><a href="#">국가고시</a></p>
+                        <p><a href="#">임용시험</a></p>
+                        <p><a href="#">대기업/공기업/면접</a></p>
+                        <p><a href="#">대표저자수험서</a></p>
+                        <p><a href="#">국가기술자격증</a></p>
+                        <p><a href="#">국가전문자격증</a></p>
+                        <p><a href="#">민간전문자격증</a></p>
+                        <p><a href="#">외국자격증</a></p>
+                        <p><a href="#">편입/진학/전문대학원</a></p>
+                        <p><a href="#">공부법/안내서</a></p>
+                    </div>
+                </div>
+                <div class="list">
+                    <h4><a href="#">음반</a></h4>
+                    <div>
+                        <p><a href="#">CD</a></p>
+                        <p><a href="#">LP판</a></p>
+                        <br>
+                        <span><a href="#">영상/비디오/DVD</a></span>
+                    </div>
+                </div>
+            </div>
+            <!--//subgnb-->
+            <div class="subgnb2">
+                <ul>
+                    <li><a href="#">질문과 대답</a></li>
+                    <li><a href="#">도서 Q&amp;A</a></li>
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">자료실</a></li>
+                    <li><a href="#">사용후기</a></li>
+                </ul>
+            </div>
+            <!--//subgnb2-->
+        </div>
+        <!--//헤더-->
+        <div class="mainbanner clearfix">
+            <ul class="slider">
+                <li><a href="#"><img src="image/mainbanner1.png" alt="가장 저렴한 가격과 빠른 서비스, 구매 도서의 최대 10%를 적립금으로"></a></li>
+                <li><a href="#"><img src="image/mainbanner2.png" alt="한권에 300원부터, 5만원 이상 구매시 무료배송"></a></li>
+                <li><a href="#"><img src="image/mainbanner3.png" alt="오늘의 책. 내감정을 읽는 시간. 우리는 모두 감정 설계자다. 감정에 압도되지 않고 유연해지는 연습 자세히보기"></a></li>  
+            </ul>
+        </div>
+        <!--//메인배너 이미지-->
+        <div class="contents_area clearfix">
+            <div class="center">
+                <div class="left_list">
+                    <div class="book_list">
+                        <h4><a href="#">도서</a></h4>
+                        <ul>
+                            <li><a href="sub_novel.html" class="pulseAnim"><b>소설</b></a></li>
+                            <li><a href="#"><b>장르소설</b></a></li>
+                            <li><a href="#">시/에세이/기행</a></li>
+                            <li><a href="#">청소년교양</a></li>
+                            <li><a href="#"><b>경제/경영</b></a></li>
+                            <li><a href="#">자기계발</a></li>
+                            <li><a href="#">인문/교양/철학</a></li>
+                            <li><a href="#">역사/신화/문화</a></li>
+                            <li><a href="#">종교</a></li>
+                            <li><a href="#">사회/정치/법률</a></li>
+                            <li><a href="#">예술/대중문화</a></li>
+                            <li><a href="#">자연과학/공학</a></li>
+                        </ul>
+                        <ul>    
+                            <li><a href="#">초등참고서</a></li>
+                            <li><a href="#"><b>중/고등참고서</b></a></li>
+                            <li><a href="#">외국어/사전</a></li>
+                            <li><a href="#">대학교재</a></li>
+                            <li><a href="#">컴퓨터/IT</a></li>
+                        </ul>      
+                        <ul>
+                            <li><a href="#">가정/생활/요리</a></li>
+                            <li><a href="#">건강/의학/미용</a></li>
+                            <li><a href="#">잡지</a></li>
+                            <li><a href="#">만화</a></li>
+                        </ul>
+                        <ul> 
+                            <li><a href="#">서양서</a></li>
+                            <li><a href="#">일본서</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4><a href="#">키즈샵</a></h4>
+                        <ul>
+                            <li><a href="#">유아</a></li>
+                            <li><a href="#">육아/자녀교육</a></li>
+                            <li><a href="#"><b>어린이</b></a></li>
+                            <li><a href="#">어린이영어</a></li>
+                            <li><a href="#">유아동전집</a></li>
+                            <li><a href="#">임신/출산/태</a></li>
+                            <li><a href="#">교구완구</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4><a href="#">수험서</a></h4>
+                        <ul>
+                            <li><a href="#"><b>공무원</b></a></li>
+                            <li><a href="#">국가고시</a></li>
+                            <li><a href="#">임용시험</a></li>
+                            <li><a href="#">대기업/공기업/면접</a></li>
+                            <li><a href="#">대표저자수험서</a></li>
+                            <li><a href="#">국가기술자격증</a></li>
+                            <li><a href="#">국가전문자격증</a></li>
+                            <li><a href="#">민간전문자격증</a></li>
+                            <li><a href="#">외국자격증</a></li>
+                            <li><a href="#">편입/진학/전문대학원</a></li>
+                            <li><a href="#">공부법/안내서</a></li>
+                        </ul>
+                    </div>
+                    <div class="etc_list">
+                        <h4><a href="#">음반</a></h4>
+                        <ul>
+                            <li><a href="#">CD</a></li>
+                            <li><a href="#">LP판</a></li>
+                            <li><a href="#"><b>영상/비디오/DVD</b></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--//왼쪽영역-->
+                <div class="right_contents clearfix">
+                    <div class="best_pro" id="best">
+                        <h3><a href="#">가장 많이 팔린 도서</a></h3>
+                        <div class="book_slider">
+                            <div>
+                                <div class="book">
+                                    <a href="#">
+                                        <img src="image/best.png" alt="칼날 위의 평화">
+                                        <span>칼날 위의 평화</span>
+                                    </a>    
+                                        <p>이종석 저</p>
+                                        <p>개마고원</p>
+                                        <p><span>24,000원</span> (15%↓)</p>
+                                </div>
+                                <div class="book">
+                                    <a href="#">
+                                        <img src="image/best2.png" alt="한국영화라는 낯선 경계">
+                                        <span>한국영화라는 낯선 경계</span>
+                                    </a>    
+                                        <p>김선아 저</p>
+                                        <p>커뮤니케이션북스</p>
+                                        <p><span>14,000원</span> (20%↓)</p>
+                                </div>
+                                <div class="book">
+                                    <a href="#">
+                                        <img src="image/best3.png" alt="태도에 관하여">
+                                        <span>태도에 관하여</span>
+                                    </a>    
+                                        <p>임경선 저</p>
+                                        <p>한겨레출판</p>
+                                        <p><span>9,000원</span> (25%↓)</p>
+                                </div>
+                                <div class="book">
+                                    <a href="#">
+                                        <img src="image/best4.png" alt="마사지사">
+                                        <span>마사지사</span>
+                                    </a>    
+                                        <p>비페이위 저</p>
+                                        <p>문학동네</p>
+                                        <p><span>12,000원</span> (20%↓)</p>
+                                </div>
+                                <div class="book">
+                                    <a href="#">
+                                        <img src="image/best5.png" alt="지적 대화를 위한 넓고 얕은 지식">
+                                        <span>지적 대화를 위한 넓고 얕은 지식</span>
+                                    </a>    
+                                        <p>채사장 저</p>
+                                        <p>문학동네</p>
+                                        <p><span>12,000원</span> (20%↓)</p>
+                                </div>
+                                <div class="book">
+                                    <a href="#">
+                                        <img src="image/best6.png" alt="참을 수 없는 존재의 가벼움">
+                                        <span>참을 수 없는 존재의 가벼움</span>
+                                    </a>    
+                                        <p>밀란 쿤데라 저</p>
+                                        <p>민음사</p>
+                                        <p><span>12,000원</span> (20%↓)</p>
+                                </div>  
+                                <div class="book">
+                                    <a href="#">
+                                        <img src="image/best7.png" alt="직지1">
+                                        <span>직지1</span>
+                                    </a>    
+                                        <p>김진명 저</p>
+                                        <p>쌤앤파커스</p>
+                                        <p><span>12,000원</span> (20%↓)</p>
+                                </div>
+                                <div class="book">
+                                <a href="#">
+                                    <img src="image/best8.png" alt="클루지">
+                                    <span>클루지</span>
+                                </a>    
+                                    <p>개리 마커스 저</p>
+                                    <p>갤리온</p>
+                                    <p><span>10,800원</span> (22%↓)</p>
+                            </div>
+                           </div>
+                        </div>
+                    </div>
+                    <!--//가장 많이 팔린 도서-->
+                    <div class="new_pro">
+                        <h3><a href="#">새로 들어온 도서</a></h3>
+                        <div class="book_slider">
+                            <div>
+                                <div class="book">
+                                    <a href="#">
+                                        <img src="image/new.png" alt="사랑할 때와 죽을 때">
+                                        <span>사랑할 때와 죽을 때</span>
+                                    </a>    
+                                        <p>원희복 저</p>
+                                        <p>공명</p>
+                                        <p><span>13,000원</span> (24%↓)</p>
+                                </div>
+                                <div class="book">
+                                    <a href="#">
+                                        <img src="image/new2.png" alt="화술 심리학">
+                                        <span>화술 심리학</span>
+                                    </a>    
+                                        <p>사이토 이사무 저</p>
+                                        <p>스카이출판사</p>
+                                        <p><span>10,000원</span> (22%↓)</p>
+                                </div>
+                                <div class="book">
+                                    <a href="#">
+                                        <img src="image/new3.png" alt="사고집약형 기업">
+                                        <span>사고집약형 기업</span>
+                                    </a>
+                                        <p>로웰 브라이언, 클라우디아 조이스 저</p>
+                                        <p>세계사</p>
+                                        <p><span>15,000원</span> (25%↓)</p>
+                                </div>
+                                <div class="book">
+                                    <a href="#">
+                                        <img src="image/new4.png" alt="나하쉬 1-3완결 전3권">
+                                        <span>나하쉬 1-3완결 전3권</span>
+                                    </a>    
+                                        <p>조례진 저</p>
+                                        <p>청어람</p>
+                                        <p><span>21,000원</span> (30%↓)</p>
+                                </div>
+                                <div class="book">
+                                    <a href="#">
+                                        <img src="image/new5.png" alt="아주 작은 습관의 힘">
+                                        <span>아주 작은 습관의 힘</span>
+                                    </a>    
+                                        <p>제임스 클리어 저</p>
+                                        <p>비지니스북스</p>
+                                        <p><span>13,000원</span> (19%↓)</p>
+                                </div>
+                                <div class="book">
+                                    <a href="#">
+                                        <img src="image/new6.png" alt="90년생이 온다">
+                                        <span>90년생이 온다</span>
+                                    </a>    
+                                        <p>임홍택 저</p>
+                                        <p>웨일북</p>
+                                        <p><span>11,000원</span> (22%↓)</p>
+                                </div>
+                                <div class="book">
+                                    <a href="#">
+                                        <img src="image/new7.png" alt="자신감">
+                                        <span>자신감</span>
+                                    </a>    
+                                        <p>샤를 페팽 저</p>
+                                        <p>미래타임즈</p>
+                                        <p><span>12,000원</span> (19%↓)</p>
+                                </div>
+                                <div class="book">
+                                    <a href="#">
+                                        <img src="image/new8.png" alt="심미안 수업">
+                                        <span>심미안 수업</span>
+                                    </a>    
+                                        <p>윤광준 저</p>
+                                        <p>지와인</p>
+                                        <p><span>11,000원</span> (30%↓)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//새로 들어온 도서-->
+                    <div class="rec_pro">
+                        <h3><a href="#">추천 도서</a></h3>
+                        <div class="book_slider">
+                            <div>
+                                <div class="book">
+                                    <a href="#">
+                                        <img src="image/recommend.png" alt="건축, 인문의 집을 짓다">
+                                        <span>건축, 인문의 집을 짓다</span>
+                                    </a>
+                                        <p>양욕기 저</p>
+                                        <p>한국문학사</p>
+                                        <p><span>11,000원</span> (20%↓)</p>
+                                </div>
+                                <div class="book">
+                                    <a href="#">
+                                        <img src="image/recommend2.png" alt="나는 괜찮은 사람입니다">
+                                        <span>나는 괜찮은 사람입니다</span>
+                                    </a>    
+                                        <p>히가시다 나오키 저</p>
+                                        <p>흐름출판</p>
+                                        <p><span>10,000원</span> (20%↓)</p>
+                                </div>
+                                <div class="book">
+                                    <a href="#">
+                                        <img src="image/recommend3.png" alt="나미야 잡화점의 기적">
+                                        <span>나미야 잡화점의 기적</span>
+                                    </a>
+                                        <p>히가시노 게이고 저</p>
+                                        <p>현대문학</p>
+                                        <p><span>11,800원</span> (20%↓)</p>
+                                </div>
+                                <div class="book">
+                                    <a href="#">
+                                        <img src="image/recommend4.png" alt="미움받을 용기">
+                                        <span>미움받을 용기</span>
+                                    </a>
+                                        <p>기시미 이치로 저</p>
+                                        <p>인플루엔셜</p>
+                                        <p><span>11,800원</span> (20%↓)</p>
+                                </div>
+                                <div class="book">
+                                    <a href="#">
+                                        <img src="image/recommend5.png" alt="삼국지">
+                                        <span>삼국지</span>
+                                    </a>
+                                        <p>기시미 이치로 저</p>
+                                        <p>인플루엔셜</p>
+                                        <p><span>11,800원</span> (20%↓)</p>
+                                </div>
+                                <div class="book">
+                                    <a href="#">
+                                        <img src="image/recommend6.png" alt="훔쳐보는 여자">
+                                        <span>훔쳐보는 여자</span>
+                                    </a>
+                                        <p>기시미 이치로 저</p>
+                                        <p>인플루엔셜</p>
+                                        <p><span>11,800원</span> (20%↓)</p>
+                                </div>
+                                <div class="book">
+                                    <a href="#">
+                                        <img src="image/recommend7.png" alt="유럽도시기행1">
+                                        <span>유럽도시기행1</span>
+                                    </a>
+                                        <p>기시미 이치로 저</p>
+                                        <p>인플루엔셜</p>
+                                        <p><span>11,800원</span> (20%↓)</p>
+                                </div>
+                                <div class="book">
+                                    <a href="#">
+                                        <img src="image/recommend8.png" alt="역사의 쓸모">
+                                        <span>역사의 쓸모</span>
+                                    </a>
+                                        <p>기시미 이치로 저</p>
+                                        <p>인플루엔셜</p>
+                                        <p><span>11,800원</span> (20%↓)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//추천 도서-->
+                </div>
+                <!--//오른쪽 영역-->
+            </div>
+            <!--//센터-->
+                <div class="bottom_contents">
+                    <div class="center">
+                        <div class="notice">
+                            <div class="title clearfix">
+                                <a href="#">
+                                    <ul>
+                                        <li><img src="image/notice.png" alt="공지사항 아이콘"></li>
+                                        <li><h2>공지사항</h2></li>
+                                        <li><img src="image/more.png" alt="더보기"></li>
+                                    </ul>
+                                </a>
+                            </div>
+                            <div class="notice_list">
+                                <ul>
+                                    <li><a href="#">2019 설연휴 배송안내</a></li>
+                                    <li><a href="#">2018 추석연휴 배송안내</a></li>
+                                    <li><a href="#">2018 설연휴 배송안내</a></li>
+                                    <li><a href="#">도서판매 의뢰서</a></li>
+                                    <li><a href="#">도서 관련 문의는 리뷰로 안됩니다. 도서...</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--//공지사항-->
+                        <div class="review">
+                            <div class="title clearfix">
+                                <a href="#">
+                                    <ul>
+                                        <li><img src="image/review.png" alt="사용후기 아이콘"></li>
+                                        <li><h2>사용후기</h2></li>
+                                        <li><img src="image/more.png" alt="더보기"></li>
+                                    </ul>
+                                </a>
+                            </div>
+                            <div class="review_list">
+                                <div>
+                                    <a href="#">
+                                        <ul>
+                                            <li>정말 A를 주고 싶은 책</li>
+                                            <li>상품명 : 피붙이와 떨거지들</li>
+                                        </ul>
+                                        <p>2019/05/25</p>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <ul>
+                                            <li>전개도 탄탄하고 요즘 책과 다르게...</li>
+                                            <li>상품명 : 천만 볼트 사랑 감전</li>
+                                        </ul>
+                                        <p>2019/05/10</p>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <ul>
+                                            <li>새 책이라고 해도 믿을 정도로...</li>
+                                            <li>상품명 : 소비자는 무엇으로 사는가?</li>
+                                        </ul>
+                                        <p>2019/04/21</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--사용후기-->
+                        <div class="latest">
+                            <div class="title clearfix">
+                                <a href="#">
+                                    <ul>
+                                        <li><img src="image/latesticon.png" alt="최근본도서 아이콘"></li>
+                                        <li><h2>최근 본 도서</h2></li>
+                                        <li><img src="image/more.png" alt="더보기"></li>
+                                    </ul>
+                                </a>
+                            </div>
+                            <div class="look">
+                                <a href="#">
+                                    <img src="image/latest1.png" alt="인생의 마지막 순간에서">
+                                    <p>인생의 마지막 순간에서</p>
+                                    <p>샐리 티스데일 저</p>
+                                </a>
+                            </div>
+                            <div class="look">
+                                <a href="#">
+                                    <img src="image/latest2.png" alt="죽음">
+                                    <p>죽음</p>
+                                    <p>베르나르 베르베르 저</p>
+                                </a>
+                            </div>
+                        </div>
+                        <!--최근본도서-->
+                    </div>
+                </div>
+                <!--//아래 영역-->
+        </div>
+        <!--//컨텐츠 영역-->
+        <div class="quick">
+            <div id="cart">
+                <a href="#">
+                    <img src="image/cart.png" alt="장바구니 아이콘">
+                    <p id="cart_num">1</p>
+                    <p>장바구니</p>
+                </a>
+            </div>
+            <div id="look_img">
+                <p><a href="#">최근 본 <span>3</span></a></p>
+                <a href="#"><img src="image/look1.png" alt="인생의 마지막 순간에"></a>
+                <a href="#"><img src="image/look2.png" alt="죽음"></a>
+                <a href="#"><img src="image/look3.png" alt="내가 사랑한 유럽 top10" class="sec"></a>
+                <div>
+                    <p class="prev"><a href="#"><img src="image/look_arrow.png" alt="왼쪽 화살표"></a></p>
+                    <p><span>1</span> / 2</p>
+                    <p class="next"><a href="#"><img src="image/look_arrow2.png" alt="오른쪽 화살표"></a></p>
+                </div>
+            </div>
+            <div id="top">
+                <p><a href="#">TOP</a></p>
+            </div>
+        </div>
+        <!--//퀵 메뉴바-->
+        <div class="footer">
+            <div class="center">
+                <div class="footer_logo">
+                    <h2><a href="index.html">고래서점</a></h2>
+                </div>
+                <div class="footer_area">
+                <div class="area_terms clearfix">
+                    <ul>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#"><b>개인정보처리방침</b></a></li>
+                        <li><a href="#">이용안내</a></li>
+                        <li><a href="#">입금계좌안내</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </div>
+                <div class="address clearfix">
+                    <ul>
+                        <li>상호 : 고래서점</li>
+                        <li>대표자 : 남동일</li>
+                        <li>개인정보 보호 책임자 : 남동일</li>
+                        <li>E-mail : <a href="#">help@gorebook.co.kr</a></li>
+                    </ul>
+                </div>
+                <div class="address clearfix">
+                    <ul>
+                        <li>사업자 등록번호 : 106-04-73454 <span><a href="#">[사업자정보확인]</a></span></li>
+                        <li>통신판매업 신고번호 : 2016-경기양주-0001</li>
+                    </ul>
+                </div>
+                <div class="address clearfix">
+                    <ul>
+                        <li>주소 : [물류센터]경기도 양주시 백석읍 복지리 426-8 / [온라인센터] 경기도 양주시 백석읍 호명로 87</li>
+                        <li>전화 : 031-878-5720</li>
+                    </ul>
+                </div>
+                <div>
+                    <address>Contact <span><a href="#">메일</a></span> for more information. Copyright &copy; 2007 <b>고래서점</b> All rights reserved.</address>
+                </div>
+                <div class="company">
+                    <ul>
+                        <li><a href="#"><img src="image/footer.png" alt="공정거래위원회"></a></li>
+                        <li><a href="#"><img src="image/footer2.png" alt="KSNET"></a></li>
+                        <li><a href="#"><img src="image/footer3.png" alt="현금영수증 가맹점"></a></li>
+                        <li><a href="#"><img src="image/footer4.png" alt="Black Shield 보안서버 작동중"></a></li>
+                        <li><a href="#"><img src="image/footer5.png" alt="Hardwear Firewall"></a></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!--//푸터-->
+        <div id="popwin">
+            <h1>알림</h1>
+            <div class="content">
+                본사이트는 상업적인 목적인 아닌 개인 포트폴리오 용도로 만들어졌습니다. <br>
+                홈페이지의 일부 내용과 이미지 등은 출처가 따로 있음을 밝힙니다.
+            </div>
+            <div class="pop_close">
+                <p>
+                    <input type="checkbox" id="pop_chk" name="pop_chk">
+                    <label for="pop_chk">오늘 이 창을 다시 보지 않기</label>
+                    <button class="closebtn">닫기</button>
+                </p>
+            </div>
+        </div>
+        <!--//팝업창-->
+    </div>
+</body>
+</html>
