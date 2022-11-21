@@ -1,0 +1,83 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+body{font-family: 'NanumSquare', sans-serif !important;}
+/*header*/
+#header{width: 1200px;position: fixed;top: 60px;left: 0;right: 0;margin: auto;z-index: 1000}
+#header h1{float: left;margin-left: 30px;width: 110px;height: 61px}
+.gnb{float: right;width: 600px;margin-right: 30px;padding: 15px 40px;font-size: 20px;background:rgba(5,58,143,1);box-sizing: border-box;border-radius: 50px}
+.gnb li{float: left;padding:0 30px;border-right: 1px solid #fff;height: 20px;line-height: 20px}
+.gnb li:last-child{border-right: none}
+.gnb li a{color: #fff}
+/*section*/
+.section{background-size: cover;background-position: center top;text-align: center}
+.section1{background-image: url(../images/main.png)}
+.section3{background-image: url(../images/product_Bg.png)}
+.section4{background-image: url(../images/cf_Bg11.png)}
+.section5{background-image: url(../images/event-bg.png)}
+.section6{border-top: 3px solid #00368d}
+/*section1*/
+.mainContent{width: 1200px;margin: auto;position: relative;margin-top: 100px;position: relative}
+.mainContent img:nth-child(2){position: absolute;top: 100px;right: 250px}
+.mainContent p .sp00{font-weight: bold}
+.mainContent p .sp01{color: #333;font-weight: bold}
+.mainContent p .sp02{color: #fff;font-weight: bold}
+.mainContent p.subtxt{position: absolute;font-size: 20px;color: #e5e5e5;bottom: -70px;right: 0;left: 0;margin: auto;text-align:center;line-height: 35px;letter-spacing: 1.1px}
+/*section2*/
+.storyWrap{width: 1200px; margin: auto}
+.storyTop{width: 650px;margin-top:100px;margin-left: 340px}
+.storyTop>h2{font-size: 40px;line-height: 90px;color: #0356be;float: left;position: relative}
+.storyTop>h2::before{content: '';background: url(../images/leaf1.png) no-repeat;width:304px;height:292px;display: block;position: absolute;top: -55px;right: 365px }
+.storyTop>img{float: right}
+.storyTop>p{clear: both;font-size: 20px;color: #777;text-align: left;line-height: 1.5;margin-left: 100px;margin-bottom: 50px}
+.storyTop .sp04{font-size:24px ;color: #6dbbe8}
+.storyMiddle ul{width: 868px;margin: auto}
+.storyMiddle li{float: left;width: 202px;height: 284px;margin-right:20px;box-sizing: border-box;padding: 15px;border: 1px solid #ddd;position: relative}
+.storyMiddle li:last-child{margin-right: 0}
+.storyMiddle h3{font-size: 30px;padding-bottom: 13px}
+.storyMiddle img{width: 80px;height: 80px;padding: 12px 0}
+.storyMiddle .ps_Txt1{font-size: 16px;height: 32px;color: #555;letter-spacing: -1.5px}
+.storyMiddle .ps_Txt2{font-size: 14px;color: #777}
+.storyMiddle li:last-child::before{content: '';background: url(../images/leaf2.png) no-repeat;width: 117px;height: 189px;position: absolute;top: -140px;right: -60px}
+.storyBottom{width: 820px;height: 80px;background: #f1fafd;border-radius: 50px;margin: auto;padding: 0 20px 0;margin: 50px auto}
+.storyBottom img{float: left;margin-top: 8px}
+.storyBottom p{float: left;font-size: 14px;text-align: left;color: #777;letter-spacing: -1.5;line-height: 1.5;margin-top: 19px;margin-left: 10px}
+/*section3*/
+.section3 .bgTop{height: 450px;width: 100%;background: rgba(209, 234, 109, 0.8);font-size: 0;position: absolute;top: 50%;transform: translateY(-50%)}
+.section3 h2{font-size: 40px; color: #fff;position: absolute;top: 50%;margin-top: -150px;left: 0;right: 0;text-align: center}
+.section3 .p_slider{width: 620px;margin: auto;height: 120px;}
+.section3 .p_list a{display: block}
+/*bxslider플러그인*/
+.bx-wrapper{position: absolute;top: 50%;transform: translateY(-50%);background: none;border: none;box-shadow: none}
+.bx-wrapper .bx-controls-direction a{width:29px;height: 56px;margin-top: -28px}
+.bx-wrapper .bx-prev{background: url(../images/prev.png) no-repeat;position: absolute;top: 0px;left: -50px}
+.bx-wrapper .bx-next{background: url(../images/next.png) no-repeat;position: absolute;top: 0px;right: -20px}
+.bx-wrapper .bx-next:focus, .bx-wrapper .bx-next:hover{background-position: 0}
+/*section4*/
+.section4 h2{font-size: 40px; color: #fff;position: absolute;top: 180px;left: 0;right: 0;margin: auto}
+.cfvideo{width: 870px; height: 489px;border: 0;margin-top: 30px}
+/*.section5*/
+.section5 h1{background: url(../images/event-titletxt.png) no-repeat;font-size: 0;width: 815px;height: 81px;position: absolute;left: 50%;margin-left: -407.5px;top: 190px}
+.quiz{margin-top: 140px;margin-bottom: 20px}
+.section5>p{font-size: 19px;letter-spacing: -1px}
+.iconarea a{display: inline-block;font-size: 0;margin:30px 30px}
+.q_fb{background: url(../images/q_fb.png) no-repeat;width: 17px;height: 34px;vertical-align: middle}
+.q_twitter{background: url(../images/q_twitter.png) no-repeat;width:28px;height: 23px;vertical-align: middle}
+.q_insta{background: url(../images/q_insta.png) no-repeat;width:28px;height: 28px;vertical-align: middle }
+.search{width: 462px;margin: auto}
+.search p{float: left}
+.search input[type='text']{border: 1px solid #bebebe;background: #fff;color: #888;padding: 10px 30px;width: 400px;height: 50px;box-sizing: border-box}
+.search input[type='submit']{border: none;padding: 6px 16px;background: #0256be;font-size: 16px;letter-spacing: -1px;color: #fff;height: 50px;box-sizing: border-box}
+
+.footer{height: 200px;width: 1200px;margin: 50px auto}
+.footer h1{background: url(../images/footerLogo.png) no-repeat; font-size: 0;width: 162px;height: 91px;float: left}
+.footer .f-BtnArea{float: right}
+.footer .f-BtnArea button{float: right;width: 73px; height: 30px;border: none;font-size: 14px;color: #666;border-radius: 5px;letter-spacing: -1px;line-height: 30px;margin-left: 10px}
+.footer .f-text{padding-top: 50px;text-align:right;font-size: 13px;line-height: 20px}
+
+#popwin{position:fixed;top: 300px;left: 50%;margin-left:-305px;background: #fff;width: 570px;height: 300px;padding: 0 40px;box-sizing: border-box;border: 3px solid #101043;box-shadow: 2px 2px 7px rgba(0,0,0,.5);z-index: 2000}
+#popwin h1{text-align: center;line-height: 70px;font-size: 24px;color: #222;border-bottom: 1px solid #000;width: 70px;margin: 15px auto;}
+.content{line-height: 30px;padding-top: 20px}
+.pop_close{margin-top: 50px;float: right}
+#popwin input{vertical-align: middle}
+#popwin label{font-size: 13px;margin-right: 8px}
+#popwin button{font-size: 12px;padding: 1px 6px;border: none;line-height: 20px;background: #101043;color: #fff}
