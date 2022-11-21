@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AOMG</title>
+    <script src="libs/jquery-1.12.4.min.js"></script>
+    <script src="libs/swiper.min.js"></script>
+    <link rel="stylesheet" href="libs/swiper.min.css" type="text/css">
+    <script src="libs/bxSlider/jquery.bxslider.min.js"></script>
+    <script src="libs/bxSlider/jquery.bxslider.min.css"></script>
+    <script src="libs/bxSlider/vendor/jquery.fitvids.js"></script>
+    <script src="libs/jquery.cookie.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <script>
+        $(function(){
+            $(window).on('load resize',function(){
+                 var a=$(window).width();
+                $('.mainslider ul li').width(a)
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="center"> 
+                <h1><a href="index.html">AOMG</a></h1>
+                <ul class="gnb clearfix">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="sub_artists.html" class="pulseAnim">ARTISTS</a></li>
+                    <li><a href="sub_schedule.html" class="pulseAnim">SCHEDULE</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">A6OVE STORE</a></li>
+                </ul>
+                <div class="nav-icon">
+                  <div>메뉴</div>
+                </div>
+            </div>  
+        </div>
+        <div class="main">
+            <ul class="mainslider">
+                <li>
+                    <div class="mainarea">
+                        <div class="mainbg">
+                            <img src="img/mainbg1.png" alt="박재범">        
+                        </div>
+                        <div class="videowrap">
+                          <video autoplay loop="loop" muted>
+                                <source src="img/jpark.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="mainimg">
+                            <img src="img/t_main1.png" alt="박재범">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="mainarea">
+                        <div class="mainbg">
+                            <img src="img/mainbg3.png" alt="그레이">        
+                        </div>
+                        <div class="videowrap">
+                            <video autoplay loop="loop" muted>
+                                <source src="img/gray.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="mainimg">
+                            <img src="img/t_main2.png" alt="그레이">
+                        </div>
+                    </div>                   
+                </li>
+            </ul>
+        </div>
+        <div class="contents center clearfix">
+            <div class="album">
+                <h2><a href="#">ALBUM</a></h2>
+                <ul class="clearfix">
+                    <li>
+                        <a href="#">
+                            <img src="img/album1.png" alt="화기엄금">
+                            <div class="album_txt">
+                                <span>화기엄금</span>
+                                <p>Simon Dominic</p>
+                                <p>2019.09.03</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/album2.png" alt="Men In Black">
+                            <div class="album_txt">
+                                <span>Men In Black</span>
+                                <p>Ugly Duck</p>
+                                <p>2019.09.06</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/album3.png" alt="On Fire">
+                            <div class="album_txt">
+                                <span>On Fire</span>
+                                <p>박재범, Yultron</p>
+                                <p>2019.08.30</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/album4.png" alt="Make her dance">
+                            <div class="album_txt">
+                                <span>Make her dance</span>
+                                <p>Simon Dominic</p>
+                                <p>2019.08.21</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="works">
+                <h2><a href="#">WORKS</a></h2>
+                <div class="work_inner">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="img/works1.png" alt="사인히어"> 
+                                    <p>자세히보기</p>     
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="img/works2.png" alt="맛남의 광장"> 
+                                    <p>자세히보기</p>     
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="img/works3.png" alt="south side"> 
+                                    <p>자세히보기</p>     
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="img/works4.png" alt="오프 루트 페스트"> 
+                                    <p>자세히보기</p>     
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="img/works5.png" alt="jay park world tour"> 
+                                    <p>자세히보기</p>     
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="img/works1.png" alt="사인히어"> 
+                                    <p>자세히보기</p>     
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="img/works2.png" alt="맛남의 광장"> 
+                                    <p>자세히보기</p>     
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="img/works3.png" alt="south side"> 
+                                    <p>자세히보기</p>     
+                                </a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>             
+            </div>
+            <div class="voc">
+                <h2><a href="#">VOD</a></h2>
+                <div class="voc_main">
+                    <iframe src="https://www.youtube.com/embed/CROMENqlSVg" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/weeAuH0MYvU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="voc_img">
+                    <ul class="voc_slider">
+                        <li><iframe src="https://www.youtube.com/embed/E1TFTq29Gyc" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+                        <li><iframe src="https://www.youtube.com/embed/L6rtILsAj80" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+                        <li><iframe src="https://www.youtube.com/embed/W1S3Axm3bko" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+                        <li><iframe src="https://www.youtube.com/embed/6-h-KF3Pnzo" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+                        <li><iframe src="https://www.youtube.com/embed/eYwmtI97iyE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+                        <li><iframe src="https://www.youtube.com/embed/llnmTL2J1e8" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sns">
+                <h2><a href="#">SNS</a></h2>
+                <div class="instagram">
+                    <ul class="clearfix">
+                        <li>
+                            <a href="#">
+                                <img src="img/sns_img1.png" alt="인스타그램 이미지1">
+                                <p><span>9,029</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/sns_img2.png" alt="인스타그램 이미지2">
+                                <p><span>6,941</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/sns_img3.png" alt="인스타그램 이미지3">
+                                <p><span>13.8천</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/sns_img4.png" alt="인스타그램 이미지4">
+                                <p><span>17.6천</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/sns_img5.png" alt="인스타그램 이미지5">
+                                <p><span>27.4천</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/sns_img6.png" alt="인스타그램 이미지6">
+                                <p><span>23.1천</span></p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="twitter">
+                    <ul>
+                        <li>
+                            <blockquote class="twitter-tweet" data-lang="ko"><p lang="ko" dir="ltr">[후디 (Hoody)]<br>Hoody (후디) - &#39;MIRO&#39;<br>Produced by <a href="https://twitter.com/slominu?ref_src=twsrc%5Etfw">@slominu</a><br>-<br>Stream NOW at:<a href="https://t.co/2BcovdXMGi">https://t.co/2BcovdXMGi</a> <a href="https://t.co/TJLXzXITYs">pic.twitter.com/TJLXzXITYs</a></p>&mdash; AOMG (@AOMGOFFICIAL) <a href="https://twitter.com/AOMGOFFICIAL/status/1177145786674683904?ref_src=twsrc%5Etfw">2019년 9월 26일</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </li>
+                        <li>
+                            <blockquote class="twitter-tweet" data-lang="ko"><p lang="en" dir="ltr">[후디 (Hoody)]<br>Hoody (후디) - &#39;MIRO&#39;<br>Produced by <a href="https://twitter.com/slominu?ref_src=twsrc%5Etfw">@slominu</a><br>-<br>MIRO Official Music Video OUT NOW! (Link in <a href="https://twitter.com/AOMGOFFICIAL?ref_src=twsrc%5Etfw">@AOMGOFFICIAL</a> bio) <a href="https://t.co/KCNkNHyr3L">pic.twitter.com/KCNkNHyr3L</a></p>&mdash; AOMG (@AOMGOFFICIAL) <a href="https://twitter.com/AOMGOFFICIAL/status/1177146037288329216?ref_src=twsrc%5Etfw">2019년 9월 26일</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="clearfix">
+                <div class="f_txt">
+                    <h1><a href="#">AOMG</a></h1>
+                    <p>서울특별시 강남구 신사동 643번지 우백빌딩 18호
+                    <br>COPYRIGHT ⓒ 2013 AOMG ALL RIGHTS RESERVED. </p>
+                </div>
+                <div class="f_icon">
+                    <ul>
+                        <li><a href="#"><img src="img/f_insta.png" alt="인스타그램"></a></li>
+                        <li><a href="#"><img src="img/f_fb.png" alt="페이스북"></a></li>
+                        <li><a href="#"><img src="img/f_tw.png" alt="트위터"></a></li>
+                        <li><a href="#"><img src="img/f_yt.png" alt="유튜브"></a></li>
+                        <li><a href="#"><img src="img/f_sc.png" alt="사운드클라우드"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="popwin">
+            <h1>알림</h1>
+            <div class="content">
+                본사이트는 상업적인 목적인 아닌 개인 포트폴리오 용도로 만들어졌습니다. <br>
+                홈페이지의 일부 내용과 이미지 등은 출처가 따로 있음을 밝힙니다.
+            </div>
+            <div class="pop_close">
+                <p>
+                    <input type="checkbox" id="pop_chk" name="pop_chk">
+                    <label for="pop_chk">오늘 이 창을 다시 보지 않기</label>
+                    <button class="closebtn">닫기</button>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
