@@ -1,0 +1,55 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+
+body{background: #fff;font-size: 14px;font-family: 'Noto Sans KR', sans-serif;color: #333;min-width: 320px;overflow-x: hidden}
+/*header*/
+.header-wrap h1{text-align: center;height: 70px;padding: 17px 0;box-sizing: border-box}
+.header-wrap h1 picture{display: block}
+.mobile-menu-open button{background: none;border: none;cursor: pointer;outline: none;position: absolute;right: 10px;top: 20px;padding: 5px}/*outline: none 클릭 시 아웃라인 생기는거 없앰*/
+.menu-wrap{position: absolute;top: 71px;right: -100%;z-index: 10000;width: 80%;height: 100%;background: #fff;box-shadow:-2px 5px 3px rgba(0,0,0,0.3);transition: right 0.3s}
+.menu-wrap.on{right: 0}
+.util-menu{width: 70%;margin: 10px auto}
+.util-menu li{font-size: 12px;float: left;width: 33.3%;text-align: center;padding: 7px 0;position: relative}
+.util-menu li:first-child::after{content: '|';position: absolute;right: 0;top: 7px;font-size: 10px}
+.util-menu li:last-child{background: #bc9b6a}
+.util-menu li:last-child a{color: #fff}
+#gnb .main>li a{position: relative;display: block;padding: 15px;border-bottom: 1px solid #ccc}
+#gnb .main>li>a::after{content: '';display: block;width: 9px;height: 9px;border-top: 1px solid #ccc;border-right: 1px solid #ccc;position: absolute;right: 20px;top: 20px;transform: rotate(135deg)}
+#gnb .main>li.on>a{background: #bc9b6a;color: #fff}
+#gnb .main>li.on>a::after{transform: rotate(-45deg);top: 25px;border-top-color: #fff;border-right-color: #fff}
+#gnb .sub{margin-left: 40px;font-size: 12px;display: none}
+#gnb .sub>li>a{padding: 10px}
+
+/*footer*/
+footer{color: #ccc;height: 100%;padding: 40px;background: #272727;margin-top: 100px}
+.footer-logo{text-align: center}
+.footer-policy{text-align: center;padding:20px 0}
+.footer-policy li{display: inline-block;font-size: 12px;position: relative;padding-right: 10px;margin-right: 5px}
+.footer-policy li a{color: #ccc}
+.footer-policy li:last-child{padding-right: 0;margin-right: 0}
+.footer-policy li::after{content: '|';display: block;position: absolute;top: 0;right:0;font-size: 11px }
+.footer-policy li:last-child::after{content: none}
+.copyright{text-align: center;font-size: 12px}
+@media screen and (min-width:768px){
+    .header-wrap h1{height: 80px}
+    .mobile-menu-open button{top: 25px}
+}
+@media screen and (min-width:960px){
+    .mobile-menu-open{display: none}
+    header{position: relative;height: 160px;border-bottom: 1px solid #ccc}
+    .header-wrap h1{text-align: center;height: 100px;padding: 26px 0;box-sizing: border-box}
+    .header-inner{position: relative;width: 100%;max-width: 1200px;height: 160px;margin: 0 auto}
+    .menu-wrap{left: 0;top: 10px;width: 100%;box-shadow: none;background: none}
+    .util-menu{width: 275px;margin: 0;position: absolute;top: 20px;right: 0;}
+    #gnb{position: absolute;top: 70px;left: 0;width: 100%;padding: 0;font-size: 16px}
+    #gnb .main>li{float: left;width: 13%;text-align: center;position: relative}
+    #gnb .main>li:nth-child(3){width: 16.6%}
+    #gnb .main>li a{border-bottom: none}
+    #gnb .main>li>a{height: 70px;line-height: 70px}
+    #gnb .main>li>a::after{content: none}
+    #gnb .main>li.on>a{background: none;color: #333}
+    #gnb .sub{position: absolute;top: 90px;z-index: 20000;margin-left: 0;font-size: 14px;text-align: center;width: 100%;display: none}
+    #gnb .sub>li>a{padding: 8px 0}
+    #gnb .sub>li:hover>a{background: #bc9b6a;color: #fff}
+    .gnbbg{display: block;position: absolute;left: 0;top: 160px;width: 100%;height: 250px;background: #fff;z-index: 1000;box-shadow: 0 2px 5px rgba(0,0,0,.3);display: none}
+}
