@@ -1,0 +1,41 @@
+.header{background: #000}
+.contents>h2{font-size: 35px;text-align: center;margin: 240px 0 70px;position: relative;font-family:'Fugaz One', cursive}
+.contents>h2::after{content: '';display: block;width: 50px;height: 3px;background: #c2272d;position: absolute;bottom: -20px;left: 50%;margin-left: -26px}
+
+#calendar-wrap h3{text-align: center;margin-bottom: 50px;font-size: 24px;font-family: 'ns', sans-serif}
+#calendar {width: 80%; margin: auto}
+#calendar ul {list-style: none;padding: 0;margin: 0;width: 100%;}
+#calendar li {display: block;float: left;width:14.342%;padding: 5px;box-sizing:border-box;border: 1px solid #ccc;margin-right: -1px;margin-bottom: -1px;}
+
+#calendar ul.weekdays {height: 40px;background: #c2272d;}
+#calendar ul.weekdays li {text-align: center;text-transform: uppercase;line-height: 20px;border: none !important;padding: 10px 6px;color: #fff;font-size: 13px;}
+
+#calendar .days li {height: 160px}
+#calendar .days li:hover {background: #e8e8e8;}
+#calendar .date {text-align: center;margin-bottom: 5px;padding: 4px;color: #333;width: 20px;float: right}
+
+#calendar .event {clear: both;
+    display: block;
+    font-size: 13px;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    line-height: 14px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(194, 39, 45, 0.7);
+    color: #7c7c7c;
+    text-decoration: none;
+}
+#calendar .event-desc {color: #333;margin: 3px 0 7px 0;text-decoration: none}
+#calendar .event-time {color: #777}
+#calendar .event-desc span{display: block;font-weight: bold;margin-top: 7px}
+#calendar .other-month {background: #f5f5f5;color: #666;}
+#calendar .other-month .date{color: #999}
+
+
+@media(max-width: 768px) {
+    #calendar .weekdays, #calendar .other-month {display: none}
+    #calendar li {height: auto !important;border: 1px solid #ededed;width: 100%;padding: 10px;margin-bottom: -1px}
+    #calendar .date {float: none}
+}

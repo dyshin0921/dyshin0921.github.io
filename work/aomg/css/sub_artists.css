@@ -1,0 +1,23 @@
+.header{background: #000}
+.contents>h2{font-size: 35px;text-align: center;margin: 240px 0 100px;position: relative;font-family:'Fugaz One', cursive}
+.contents>h2::after{content: '';display: block;width: 50px;height: 3px;background: #c2272d;position: absolute;bottom: -20px;left: 50%;margin-left: -26px}
+.list ul li{float: left;width: 25%;margin-bottom: 50px;text-align: center}
+.list ul li img{width:100%;padding: 0 20px;box-sizing: border-box;margin-bottom: 20px;transition: all 1s}
+.list ul li:hover img{transform: scale(1.02)}
+.list ul li p{font-size: 24px;font-weight: bold}
+.list ul li p span{font-size: 16px;font-weight: normal;color: #555}
+
+@media screen and (max-width:1280px){
+    .center .list{width: 90%;margin: auto}
+}
+@media screen and (max-width:768px){
+    .list ul li{width: 33.3%}
+}
+@media screen and (max-width:600px){
+    .list ul li:nth-child(5) p:nth-of-type(2){display: none}
+}
+@media screen and (max-width:500px){
+    .header{height: 80px}
+    .contents>h2{margin: 140px 0 100px}
+    .list ul li{width: 50%}
+}
